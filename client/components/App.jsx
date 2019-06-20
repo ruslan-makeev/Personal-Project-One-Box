@@ -1,9 +1,16 @@
 import React from 'react'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>Testing link.</p>
+        <Link to="/react">Login</Link>
+      </div>
+    );
+  }
 }
 
-export default App
+export default App;
+
