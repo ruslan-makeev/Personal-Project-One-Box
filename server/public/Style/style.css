@@ -1,42 +1,101 @@
-body {
-   /* background-image: url("../Style/OneBox\ another\ option.jpg")  */
-   background-color: rgb(222, 230, 223);
-  }
 
-  #myHeader {
-    background-color: rgb(115, 216, 250);
-    color: black;
-    padding: 20px;
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-top: 0px;
-  } 
-
-  #myFooter {
-    position: fixed;
-    height: 50px;
-    background-color: rgb(115, 216, 250);
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-  } 
-  
-h1 {
-      font-size:50px;
-      font-family: 'Mali', cursive;
-      text-align: center;
-    }
-  
-h2 {
-      font-size:35px;
-      font-family: 'Mali', cursive;
-      text-align: center;
-    }
-    
-p {
-      font-family: 'Mali', cursive;
-    }
+:root {
+  font-family: 'Orbitron', sans-serif;
+}
+img {
+  border: 0;
+}
+th {
+  text-align: start;
+  white-space: nowrap;
+}
+th > a {
+  color: inherit;
+}
+table[order] > thead > tr > th {
+  cursor: pointer;
+}
+table[order] > thead > tr > th::after {
+  display: none;
+  width: .8em;
+  margin-inline-end: -.8em;
+  text-align: end;
+}
+table[order="asc"] > thead > tr > th::after {
+  content: "\2193"; /* DOWNWARDS ARROW (U+2193) */
+}
+table[order="desc"] > thead > tr > th::after {
+  content: "\2191"; /* UPWARDS ARROW (U+2191) */
+}
+table[order][order-by="0"] > thead > tr > th:first-child > a ,
+table[order][order-by="1"] > thead > tr > th:first-child + th > a ,
+table[order][order-by="2"] > thead > tr > th:first-child + th + th > a {
+  text-decoration: underline;
+}
+table[order][order-by="0"] > thead > tr > th:first-child::after ,
+table[order][order-by="1"] > thead > tr > th:first-child + th::after ,
+table[order][order-by="2"] > thead > tr > th:first-child + th + th::after {
+  display: inline-block;
+}
+table.remove-hidden > tbody > tr.hidden-object {
+  display: none;
+}
+td {
+  white-space: nowrap;
+}
+table.ellipsis {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+table.ellipsis > tbody > tr > td {
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* name */
+/* name */
+th:first-child {
+  padding-inline-end: 2em;
+}
+/* size */
+th:first-child + th {
+  padding-inline-end: 1em;
+}
+td:first-child + td {
+  text-align: end;
+  padding-inline-end: 1em;
+}
+/* date */
+td:first-child + td + td {
+  padding-inline-start: 1em;
+  padding-inline-end: .5em;
+}
+/* time */
+td:first-child + td + td + td {
+  padding-inline-start: .5em;
+}
+.symlink {
+  font-style: italic;
+}
+.dir ,
+.symlink ,
+.file {
+  margin-inline-start: 20px;
+}
+.dir::before ,
+.file > img {
+  margin-inline-end: 4px;
+  margin-inline-start: -20px;
+  max-width: 16px;
+  max-height: 16px;
+  vertical-align: middle;
+}
+.dir::before {
+  content: url(resource://content-accessible/html/folder.png);
+}
+.icon1 {
+  background: url('./test-icon.png');
+  height: 25px;
+  width: 25px;
+  display: block;

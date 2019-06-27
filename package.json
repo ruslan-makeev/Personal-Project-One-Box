@@ -11,7 +11,9 @@
     "dev": "node server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "standard": "standard",
+    "standard::fix": "standard --fix"
   },
   "babel": {
     "presets": [
@@ -46,6 +48,7 @@
     "jest": "^24.7.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "standard": "^12.0.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
