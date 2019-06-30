@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Bulkit :: Login</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+
+</head>
+
+<body>
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <!-- Hero and nav -->
+    <div class="hero hero-waves-dark is-fullheight is-relative is-light-grey">
+
+        <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="assets/images/logos/bulkit-prime.svg" alt="">
+                    </a>
+
+                    <!-- Sidebar Trigger -->
+                    <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- Responsive toggle -->
+                    <div class="custom-burger" data-target="">
+                        <a id="" class="responsive-btn" href="javascript:void(0);">
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- /Responsive toggle -->
+                </div>
+
+                <!-- Navbar menu -->
+                <div class="navbar-menu">
+                    <!-- Navbar Start -->
+                    <div class="navbar-start">
+                        <!-- Navbar item -->
+                        <a class="navbar-item is-slide" href="landing-features.html">
+                            Features
+                        </a>
+                        <!-- Navbar item -->
+                        <a class="navbar-item is-slide" href="landing-pricing.html">
+                            Pricing
+                        </a>
+                        <!-- Navbar item -->
+                        <a class="navbar-item is-slide" href="landing-login.html">
+                            Login
+                        </a>
+                    </div>
+
+                    <!-- Navbar end -->
+                    <div class="navbar-end">
+                        <!-- Signup button -->
+                        <div class="navbar-item">
+                            <a id="#signup-btn" href="landing-signup.html"
+                                class="button button-cta btn-outlined is-bold btn-align primary-btn rounded raised">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero -->
+        <div id="main-hero" class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-6 is-offset-3 z-index-2">
+                        <div id="login-card" class="animated preFadeInLeft fadeInLeft">
+                            <div class="flex-card wavy-login-card">
+                                <h2 class="text-bold dark-text no-margin-bottom pt-20 pb-20">Log in</h2>
+                                <form class="pt-10 pb-10">
+                                    <div class="control-material is-primary">
+                                        <input class="material-input" type="text" required>
+                                        <span class="material-highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Username</label>
+                                    </div>
+                                    <div class="control-material is-primary">
+                                        <input class="material-input" type="text" required>
+                                        <span class="material-highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Password</label>
+                                    </div>
+
+                                    <div class="field pt-20">
+                                        <div class="control">
+                                            <label class="checkbox-wrap is-medium">
+                                                <input id="check2" type="checkbox" class="d-checkbox">
+                                                <span></span>
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20 pb-20">
+                                        <button
+                                            class="button button-cta btn-align primary-btn is-fullwidth rounded raised no-lh">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <p class="has-text-centered mt-30">
+                                <a id="show-recover" class="no-account" href="#">Lost your password?</a>
+                            </p>
+                        </div>
+
+                        <div id="recover-card" class="animated preFadeInLeft fadeInLeft is-hidden">
+                            <div class="flex-card wavy-login-card">
+                                <h2 class="text-bold dark-text no-margin-bottom pt-20 pb-20">Reset Password</h2>
+                                <form>
+                                    <div class="control-material is-secondary">
+                                        <input class="material-input" type="text" required>
+                                        <span class="material-highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Email *</label>
+                                    </div>
+
+                                    <div class="pt-20 pb-20">
+                                        <button
+                                            class="button button-cta btn-align secondary-btn is-fullwidth rounded raised no-lh">Reset
+                                            Password</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <p class="has-text-centered mt-40">
+                                <a id="show-login" class="no-account is-secondary" href="#">Back to login</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hero image -->
+    </div>
+    <!-- /Hero and nav -->
+
+    <!-- Dark footer -->
+    
+    <script src="assets/js/app.js"></script>
+
+    <!-- Bulkit js -->
+    <script src="assets/js/landing.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
